@@ -1,10 +1,12 @@
 import React from 'react';
 
-function Heading(){
+function Heading(props){
+    const { name, age } = props.profile
+    // console.log(props)
     return (
         <div>
-            <h1>Heading 1</h1>
-            <p>Paragraf 1</p>
+            <h1>Welcome, {name}</h1>
+            <p>Age: {age}</p>
             <hr />
         </div>
     )
